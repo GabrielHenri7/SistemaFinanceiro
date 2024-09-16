@@ -5,6 +5,12 @@ form{
     
 }
 
+#h1_cad_user{
+    margin-bottom: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
 .fa-solid{
     font-size: 70px;
     color: rgb(6, 11, 56);
@@ -30,3 +36,4 @@ body{
     width: 20%;
     background-color: rgb(6, 11, 56);
 }
+
