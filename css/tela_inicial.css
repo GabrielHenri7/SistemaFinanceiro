@@ -1,0 +1,33 @@
+body{
+    background-color: #184763;
+    text-align: center;
+    margin-top: 65px;
+    color: aliceblue;
+}
+
+.container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    font-size: 60px;
+}
+
+a{
+    text-transform: none;
+    color: white;
+    text-decoration: none;
+}
+
+.btn{
+    width: 70%;
+    background-color: rgb(0, 24, 61);
+    text-align: center;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 600px;
+}
