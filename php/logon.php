@@ -15,16 +15,23 @@ $query = $conexao ->query($sql);
 
 $resultado = $query->fetch_assoc();
 
-print_r($resultado);
 
 $email_banco = $resultado['email'];
 $senha_banco = $resultado['senha'];
 
-if($email == $email_banco && $password == $senha_banco){
-    header('location: ../tela_inicial.html');
-} else{
-    echo "<script> alert('Usuário ou senha inválida'); history.back() </script>";
+if($email == null && $password == null){
+   echo  "<script> alert('Usuário ou senha inválida'); window.location = '../index.html' </script>";
 }
+else {
+    if($email == $email_banco && $password == $senha_banco){
+        session_start();
+        $_SESSION['id'] = $resultado['id_usuario'];
+        header('location: ../tela_inicial.php');
+    } else{
+        echo "<script> alert('Usuário ou senha inválida'); history.back(); </script>";
+    }
+}
+
 
 //codigo certo
 

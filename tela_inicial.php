@@ -9,11 +9,21 @@
     <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div style="">
+    <?php
+        session_start();
+        if (isset($_SESSION['id'])) {
+            $id = $_SESSION['id'];
+            echo "olá $id";
+        }
+    ?>
+    </div>
     <div class="container text-center">
         <h1>BEM VINDO A EMPRESA DO BIEL!!</h1><br>
         <p>Aqui você pode cadastrar uma categoria e realizar um lançamento</p>
-        <a class="btn btn-primary" href="" role="button">Lançamento</a><br>
-        <button type="submit" class="btn btn-primary">Categoria</button></a>
+        <a class="btn btn-primary" href="index.html" role="button">Voltar</a><br>
+        <a class="btn btn-primary" href="categoria.html" role="button">Categoria</a><br>
+        <a class="btn btn-primary" href="lancamento.html" role="button">Lançamento</a><br>
     </div>
 </body>
 </html>

@@ -12,16 +12,12 @@
 
     if ($conexao ->query($sql))
     {
-        echo "<script>('Inserido com Sucesso!'; history.back())<script>";
+        echo "<script>('Inserido com Sucesso!'; history.back();<script>";
     }
 
     else
     {
         echo "Falha na conexão com o banco de dados"; 
     }
-
-
-
-
 
 ?>
