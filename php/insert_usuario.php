@@ -1,10 +1,10 @@
 <?php
     include 'conexao.php';
 
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $cargo = $_POST['cargo'];
-    $senha = $_POST['senha'];
+    $nome = $_GET['Nome'];
+    $email = $_POST['Email'];
+    $cargo = $_POST['Cargo'];
+    $senha = $_POST['Senha'];
 
     $sql = "INSERT INTO tb_user VALUES (null, '$nome', '$email', '$cargo', '$senha')";
 
@@ -12,7 +12,7 @@
 
     if ($conexao ->query($sql))
     {
-        echo "<script>('Inserido com Sucesso!'; history.back();<script>";
+        echo "<script>alert('Inserido com Sucesso!'); window.location.href = '../index.html';</script>";
     }
 
     else
