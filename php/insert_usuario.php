@@ -12,7 +12,7 @@
 
     if ($conexao ->query($sql))
     {
-        echo "<script>('Inserido com Sucesso!'; history.back();<script>";
+        echo "<script>alert('Inserido com Sucesso!'); window.location.href = '../index.html';</script>";
     }
 
     else

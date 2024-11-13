@@ -24,8 +24,8 @@ if($email == null && $password == null){
 }
 else {
     if($email == $email_banco && $password == $senha_banco){
-        session_start();
-        $_SESSION['id'] = $resultado['id_usuario'];
+       // session_start();
+        // $_SESSION['id'] = $resultado['id_usuario'];
         header('location: ../tela_inicial.php');
     } else{
         echo "<script> alert('Usuário ou senha inválida'); history.back(); </script>";

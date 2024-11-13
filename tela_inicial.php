@@ -11,17 +11,16 @@
 <body>
     <div style="">
     <?php
-        session_start();
-        if (isset($_SESSION['id'])) {
-            $id = $_SESSION['id'];
-            echo "olá $id";
-        }
+       // session_start();
+       // if (isset($_SESSION['id'])) {
+        //    $id = $_SESSION['id'];
+       //     echo "olá $id";
+       // }
     ?>
     </div>
     <div class="container text-center">
         <h1>BEM VINDO A EMPRESA DO BIEL!!</h1><br>
         <p>Aqui você pode cadastrar uma categoria e realizar um lançamento</p>
-        <a class="btn btn-primary" href="index.html" role="button">Voltar</a><br>
         <a class="btn btn-primary" href="categoria.html" role="button">Categoria</a><br>
         <a class="btn btn-primary" href="lancamento.html" role="button">Lançamento</a><br>
     </div>
