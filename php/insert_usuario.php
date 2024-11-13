@@ -1,10 +1,10 @@
 <?php
     include 'conexao.php';
 
-    $nome = $_GET['Nome'];
-    $email = $_POST['Email'];
-    $cargo = $_POST['Cargo'];
-    $senha = $_POST['Senha'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $cargo = $_POST['cargo'];
+    $senha = $_POST['senha'];
 
     $sql = "INSERT INTO tb_user VALUES (null, '$nome', '$email', '$cargo', '$senha')";
 
